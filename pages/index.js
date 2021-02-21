@@ -6,14 +6,14 @@ export default function Home() {
       <h1 className="heading">Hello Next.js</h1>
       <Content type="alert"/>
       <p>ここにもコンテンツが入ります。</p>
-      <style>
+      {/* <style>
         {`
           .heading {
             color: red;
             background: green;
           }
         `}
-      </style>
+      </style> */}
     </div>
   );
 }
