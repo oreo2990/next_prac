@@ -1,5 +1,5 @@
 // 遷移元のpages>posts>「index.js」ファイルを確認のこと
-// getServerSidePropsでデータを受け取った場合
+// 1.getServerSidePropsでデータを受け取った場合
     // 1．①getServerSidePropsの引数がcontextの時、contextの中身確認する
         // export default function post({post}){
         //     return (
@@ -32,7 +32,7 @@
         //     return {props:{posts}};
         // }
 
-// getStaticPropsでデータを受け取った場合、getStaticPathsの設定が必要。
+// 2.getStaticPropsでデータを受け取った場合、getStaticPathsの設定が必要。
      export default function post({post}){
             return (
                 <div>
