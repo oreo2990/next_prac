@@ -22,7 +22,7 @@ function Content() {
   return (
     <div>
       <p>ここにコンテンツが入ります。</p>
-      <style jsx>{`
+      <style global jsx>{`
         p {
           color: blue;
         }
