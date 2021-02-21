@@ -1,9 +1,10 @@
 import Link from "next/link";
+import styles from "../styles/Home.module.css";
 
 export default function Home() {
   return (
     <div>
-      <h1 className="heading">Hello Next.js</h1>
+      <h1 className={styles.heading}>Hello Next.js</h1>
       <Content type="alert"/>
       <p>ここにもコンテンツが入ります。</p>
       {/* <style>
