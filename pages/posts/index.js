@@ -19,10 +19,20 @@ export default function index({ posts }) {
   }
 
 
-// サーバーサイドレンダリングで外部のデータを取得(getServerSidePropsを使用)
-export async function getServerSideProps() {
+// 1．サーバーサイドレンダリングで外部のデータを取得(getServerSidePropsを使用)
+// export async function getServerSideProps() {
+//     const res = await fetch(`https://jsonplaceholder.typicode.com/posts`);
+//     const posts = await res.json();
+//     // console.log(posts);
+//     return { props: { posts } };
+//   }  
+
+// 2．静的ジェネレーションで外部のデータを取得(getStaticPropsを使用)
+export async function getStaticProps() {
     const res = await fetch(`https://jsonplaceholder.typicode.com/posts`);
     const posts = await res.json();
     // console.log(posts);
     return { props: { posts } };
   }  
+
+ 
