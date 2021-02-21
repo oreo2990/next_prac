@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <div>
       <h1 className="heading">Hello Next.js</h1>
-      <Content />
+      <Content type="alert"/>
       <p>ここにもコンテンツが入ります。</p>
       <style>
         {`
@@ -18,13 +18,13 @@ export default function Home() {
   );
 }
 
-function Content() {
+function Content({type}) {
   return (
     <div>
       <p>ここにコンテンツが入ります。</p>
       <style global jsx>{`
         p {
-          color: blue;
+          color: ${type == "alert"?"red":"blue"};}
         }
       `}</style>
     </div>
